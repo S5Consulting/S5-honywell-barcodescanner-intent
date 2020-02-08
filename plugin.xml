@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="cordova-honeywell-scanner-simplified-Intent" 
+        id="cordova-honeywell-scanner-simplified-intent" 
         version="1.0.0">
     <name>HoneywellScannerSimplified</name>
     <description>Honeywell Scanner Simplified Plugin</description>
