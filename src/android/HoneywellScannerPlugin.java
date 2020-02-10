@@ -61,7 +61,7 @@ public class HoneywellScannerPlugin extends CordovaPlugin  {
             if(barcodeDataReceiver!=null){
               getActivity().getApplicationContext().registerReceiver(barcodeDataReceiver,new IntentFilter(ACTION_BARCODE_DATA));
               claimScanner();
-              Log.d(TAG,"Registered uccessfully")
+              Log.d(TAG,"Registered Successfully");
             }
         }
          if (action.equals("nativeReleaseScanner")) {
