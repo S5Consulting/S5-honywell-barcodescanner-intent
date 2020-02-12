@@ -25,7 +25,6 @@ public class HoneywellScannerPlugin extends CordovaPlugin  {
     private static final String ACTION_RELEASE_SCANNER="com.honeywell.aidc.action.ACTION_RELEASE_SCANNER";
     private static final String EXTRA_PROFILE="com.honeywell.aidc.extra.EXTRA_PROFILE";
     private static final String EXTRA_PROPERTIES="com.honeywell.aidc.extra.EXTRA_PROPERTIES";
-    private static BarcodeReader barcodeReader;
     private CallbackContext callbackContext;
     private BroadcastReceiver barcodeDataReceiver;
 
