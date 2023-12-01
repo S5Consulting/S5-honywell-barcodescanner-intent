@@ -1,11 +1,11 @@
 {
   "author": {
-    "name": "Joe jacob",
-    "url": "http://doru-moraru.com"
+    "name": "Charbel Kisso",
+    "email": "charbelkisso@gmail.com"
   },
   "deprecated": false,
   "description": "Ionic/Cordova Honeywell Scanner Simplified Plugin for the built-in barcodes scanner.",
-  "homepage": "https://github.com/joetjacobs/npmjs-cordova-honeywell-scanner-simplified",
+  "homepage": "https://github.com/S5Consulting/S5-honywell-barcodescanner-intent",
   "keywords": [
     "ionic",
     "cordova",
@@ -14,10 +14,10 @@
   ],
   "license": "MIT",
   "main": "www/honeywell.js",
-  "name": "cordova-honeywell-scanner-simplified-intent",
+  "name": "S5-honeywell-barcodescanner-intent",
   "repository": {
     "type": "git",
-    "url": "https://github.com/joetjacobs/npmjs-cordova-honeywell-scanner-simplified"
+    "url": "https://github.com/S5Consulting/S5-honywell-barcodescanner-intent"
   },
   "version": "1.5.4"
 }
