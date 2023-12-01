@@ -122,7 +122,7 @@ public class HoneywellScannerPlugin extends CordovaPlugin  {
       Bundle properties = new Bundle();
       properties.putBoolean("DPR_DATA_INTENT",true);
       properties.putString("DPR_DATA_INTENT_ACTION",ACTION_BARCODE_DATA);
-      getActivity().getApplicationContext().sendBroadcast(new Intent(ACTION_CLAIM_SCANNER).putExtra(EXTRA_PROFILE,"DEFAULT").putExtra(EXTRA_PROPERTIES,properties));
+      getActivity().getApplicationContext().sendBroadcast(new Intent(ACTION_CLAIM_SCANNER).putExtra(EXTRA_PROFILE,"neptune").putExtra(EXTRA_PROPERTIES,properties));
     }
     private void releaseScanner(){
       getActivity().getApplicationContext().sendBroadcast(new Intent(ACTION_RELEASE_SCANNER));
