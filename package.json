@@ -14,7 +14,7 @@
   ],
   "license": "MIT",
   "main": "www/honeywell.js",
-  "name": "S5-honeywell-barcodescanner-intent",
+  "name": "s5-honeywell-barcodescanner-intent",
   "repository": {
     "type": "git",
     "url": "https://github.com/S5Consulting/S5-honywell-barcodescanner-intent"
