@@ -2,7 +2,7 @@
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="s5-honeywell-barcodescanner-intent" 
-        version="1.5.5">
+        version="1.5.6">
     <name>HoneywellScannerSimplified</name>
     <description>Honeywell Scanner Simplified Plugin</description>
     <engines>
