@@ -5,16 +5,14 @@ var honeywell = {
    * Listens for scan events from the Honeywell scanner
    * @param {*} success
    * @param {*} failure
-   * @param {Array} args
    * @returns
    */
-  listenForScans: function (success, failure, args) {
+  listenForScans: function (success, failure) {
     return execute(
       success,
       failure,
       "HoneywellScannerPlugin",
-      "listenForScans",
-      args
+      "listenForScans"
     );
   },
   nativeReleaseScanner: function (success, failure) {

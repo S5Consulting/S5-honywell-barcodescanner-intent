@@ -57,16 +57,10 @@ public class HoneywellScannerPlugin extends CordovaPlugin {
       if (barcodeDataReceiver != null) {
         getActivity().getApplicationContext().registerReceiver(barcodeDataReceiver,
             new IntentFilter(ACTION_BARCODE_DATA));
+            
+        claimScanner();
+        Log.d(TAG, "Registered Successfully");
 
-        // test if args has a profile name and call correct calimScanner method
-        if (args.length() > 0) {
-          String profile = args.getString(0);
-          claimScanner(profile);
-          Log.d(TAG, "Registered Successfully with profile: " + profile);
-        } else {
-          claimScanner();
-          Log.d(TAG, "Registered Successfully");
-        }
       }
     }
     if (action.equals("nativeReleaseScanner")) {
@@ -132,14 +126,6 @@ public class HoneywellScannerPlugin extends CordovaPlugin {
     properties.putString("DPR_DATA_INTENT_ACTION", ACTION_BARCODE_DATA);
     getActivity().getApplicationContext().sendBroadcast(
         new Intent(ACTION_CLAIM_SCANNER).putExtra(EXTRA_PROFILE, "neptune").putExtra(EXTRA_PROPERTIES, properties));
-  }
-
-  private void claimScanner(String profile) {
-    Bundle properties = new Bundle();
-    properties.putBoolean("DPR_DATA_INTENT", true);
-    properties.putString("DPR_DATA_INTENT_ACTION", ACTION_BARCODE_DATA);
-    getActivity().getApplicationContext().sendBroadcast(
-        new Intent(ACTION_CLAIM_SCANNER).putExtra(EXTRA_PROFILE, profile).putExtra(EXTRA_PROPERTIES, properties));
   }
 
   private void releaseScanner() {
